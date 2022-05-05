@@ -5,6 +5,6 @@ import './CoinFlip.sol';
 
 contract Test is CoinFlip {
     function echidna_test_flip() public view returns(bool) {
-        return consecutiveWins <= 100;
+        return consecutiveWins <= 10;
     }
 }
