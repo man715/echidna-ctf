@@ -12,4 +12,4 @@ function echidna_test_flip() public view returns(bool) {
     }
 ```
 
-In this test I changed the consecutiveWins
+I tested with the consecutiveWins at 10 and 100.
