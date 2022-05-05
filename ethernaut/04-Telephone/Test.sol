@@ -6,16 +6,19 @@ import './Telephone.sol';
 contract RingRing {
   Test phone = Test(0x4242);
 
+  constructor() public payable {
+      phone.changeOwner(address(0x20000));
+  }
+
   function pwn() public {
     phone.changeOwner(address(0x30000));
   }
 }
 
 contract Test is Telephone {
-    RingRing ring;
-  constructor() Telephone() public {
+  constructor() Telephone() public payable {
     // hint echidna
-    ring = new RingRing();
+    new RingRing();
   }
 
   function echidna_test_owner() public returns (bool) {
