@@ -1,0 +1,11 @@
+Analyzing contract: /code/ethernaut/02-Fallout/Test.sol:Test
+echidna_is_owner: failed!💥  
+  Call sequence:
+    Fal1out()
+
+
+
+Unique instructions: 425
+Unique codehashes: 2
+Corpus size: 1
+Seed: -3900815352063221254

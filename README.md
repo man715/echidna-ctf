@@ -10,7 +10,7 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | \#  | Name             | Solved | Echidna  | Filed Issue |
 | --- | ---------------- |:------:|:--------:| ----------- |
 | 01  | Fallback         |  Yes   | :muscle: |             |
-| 02  | Fallout          |        |          |             |
+| 02  | Fallout          |  Yes   | :muscle: |             |
 | 03  | Coin Flip        |        |          |             |
 | 04  | Telephone        |        |          |             |
 | 05  | Token            |        |          |             |
@@ -56,3 +56,10 @@ mv node_modules/@openzeppelin .
 rm -rf node_modules
 ```
 
+# Echidna Command
+The command I run to get the output here is as follows:
+```bash
+echidna-test Test.sol --contract Test --format text | tee echidna-text-run.log && rm -rf crytic-export/
+```
+
+I'm not sure if there is a better way to clean up the crytic-export folder or not. 
