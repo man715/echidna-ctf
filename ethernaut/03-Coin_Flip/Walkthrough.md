@@ -12,4 +12,4 @@ function echidna_test_flip() public view returns(bool) {
     }
 ```
 
-I tested with the consecutiveWins at 10 and 100.
+I tested with the consecutiveWins at 10, 50, and 100.
