@@ -1,0 +1,29 @@
+Analyzing contract: /code/ethernaut/03-Coin_Flip/Test.sol:Test
+echidna_test_flip: failed!💥  
+  Call sequence:
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 279353 seconds Block delay: 1713
+    flip(false) from: 0x0000000000000000000000000000000000020000 Time delay: 174732 seconds Block delay: 58446
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 136392 seconds Block delay: 19387
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 230176 seconds Block delay: 40188
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 124174 seconds Block delay: 13702
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 138641 seconds Block delay: 17068
+    flip(true) from: 0x0000000000000000000000000000000000020000 Time delay: 284367 seconds Block delay: 18004
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 185866 seconds Block delay: 12923
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 492033 seconds Block delay: 24760
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 316553 seconds Block delay: 46360
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 581481 seconds Block delay: 25729
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 552251 seconds Block delay: 28098
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 244 seconds Block delay: 33218
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 36857 seconds Block delay: 44074
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 72353 seconds Block delay: 50236
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 3409 seconds Block delay: 40468
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 517965 seconds Block delay: 48806
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 558696 seconds Block delay: 2511
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 458525 seconds Block delay: 18425
+
+
+
+Unique instructions: 332
+Unique codehashes: 1
+Corpus size: 1
+Seed: 8322371209653857418

@@ -1,0 +1,21 @@
+Analyzing contract: /code/ethernaut/03-Coin_Flip/Test.sol:Test
+echidna_test_flip: failed!💥  
+  Call sequence:
+    *wait* Time delay: 171264 seconds Block delay: 4134
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 501592 seconds Block delay: 42481
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 166633 seconds Block delay: 58234
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 243348 seconds Block delay: 28019
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 281921 seconds Block delay: 23172
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 264842 seconds Block delay: 56253
+    flip(true) from: 0x0000000000000000000000000000000000010000 Time delay: 372625 seconds Block delay: 18064
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 448443 seconds Block delay: 40175
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 25858 seconds Block delay: 15377
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 176347 seconds Block delay: 17702
+    flip(false) from: 0x0000000000000000000000000000000000010000 Time delay: 52867 seconds Block delay: 2002
+
+
+
+Unique instructions: 363
+Unique codehashes: 1
+Corpus size: 4
+Seed: 8960943074206886158

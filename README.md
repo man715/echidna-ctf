@@ -59,7 +59,7 @@ rm -rf node_modules
 # Echidna Command
 The command I run to get the output here is as follows:
 ```bash
-echidna-test Test.sol --contract Test --format text | tee echidna-text-run.log && rm -rf crytic-export/
+echidna-test Test.sol --config config.yaml --contract Test --format text | tee echidna-text-run.log && rm -rf crytic-export/
 ```
 
 I'm not sure if there is a better way to clean up the crytic-export folder or not. 
