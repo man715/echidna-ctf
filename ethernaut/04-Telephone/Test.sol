@@ -18,6 +18,10 @@ contract Test is Telephone {
     ring = new RingRing();
   }
 
+  function callPwn() public {
+      ring.pwn();
+  }
+
     function echidna_test_origin() public returns (bool) {
         if (tx.origin == owner) {
             return false;
