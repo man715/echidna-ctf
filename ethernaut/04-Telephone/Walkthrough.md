@@ -42,3 +42,4 @@ contract Test is Telephone {
 ```
 
 ## Test Setup 2
+In this setup, the fuzzer will call both 
