@@ -1,10 +1,12 @@
 # Telephone Walkthrough
 This walkthrough requires interacting with the target via a different contract. This gives us two different ways in which we can run this test. The first way is to let our test contract call the attacker contract. The other way, which maybe more realistic, is to let the fuzzer call the attack contract. 
 
+The objective is to take ownership of the target.
+
 ## Setup 1
 ## Test Setup 1
 
-In this test we will use two contracts and the constructor 
+In this test, we will use two contracts and the test contract's constructor to take ownership of the target.
 ```javascript
 pragma solidity ^0.6.0;
 
@@ -38,3 +40,5 @@ contract Test is Telephone {
     }    
 }
 ```
+
+## Test Setup 2
