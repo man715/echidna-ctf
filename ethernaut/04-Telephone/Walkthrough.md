@@ -4,6 +4,13 @@ This walkthrough requires interacting with the target via a different contract. 
 The objective is to take ownership of the target.
 
 ## Setup 1
+Create the config.yaml:
+```yaml
+contractAddr: "0x4242"
+```
+
+This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller.
+
 ## Test Setup 1
 
 In this test, we will use two contracts and the test contract's constructor to take ownership of the target.
@@ -41,5 +48,18 @@ contract Test is Telephone {
 }
 ```
 
+## Setup 2
+## Setup 1
+Create the config.yaml:
+```yaml
+contractAddr: "0x4242"
+multi-abi: true
+```
+
+This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller.
+
+The second line `multi-abi: true` is needed to allow the echidna to call into any contract with a known ABI.
+
 ## Test Setup 2
-In this setup, the fuzzer will call both 
+In this setup, the fuzzer will call public functions from both the Test contract and the RingRing contract.
+
