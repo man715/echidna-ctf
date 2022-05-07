@@ -11,8 +11,8 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | --- | ---------------- |:------:|:---------------:| ----------- |
 | 01  | Fallback         |  Yes   |    :muscle:     |             |
 | 02  | Fallout          |  Yes   |    :muscle:     |             |
-| 03  | Coin Flip        |   No   | :no_entry_sign: |             |
-| 04  | Telephone        |        |                 |             |
+| 03  | Coin Flip        |  Yes   | :no_entry_sign: |             |
+| 04  | Telephone        |  Yes   |    :muscle:     |             |
 | 05  | Token            |        |                 |             |
 | 06  | Delegation       |        |                 |             |
 | 07  | Force            |        |                 |             |
@@ -38,7 +38,7 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 
 Echidna reference:
  * :muscle:: Echidna breaks the invariant by itself or mostly by itself
- * :mag:: Echidna merely verifies some given code breaks the provided invariant
+ * :mag:: Echidna merely breaks teh invariant with substantial configuration or setup
  * :no_entry_sign:: Echidna could not conclusivly suggest an issue or provide a solution to the challenge
 
 # Setup 
