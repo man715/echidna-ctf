@@ -38,7 +38,7 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 
 Echidna reference:
  * :muscle:: Echidna breaks the invariant by itself or mostly by itself
- * :mag:: Echidna merely breaks the invariant with substantial configuration or setup
+ * :mag:: Echidna breaks the invariant with substantial configuration or setup
  * :no_entry_sign:: Echidna could not conclusivly suggest an issue or provide a solution to the challenge
 
 # Setup 
