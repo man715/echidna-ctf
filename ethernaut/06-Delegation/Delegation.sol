@@ -25,7 +25,7 @@ contract Delegation {
     owner = msg.sender;
   }
 
-  fallback() external {
+  function fallback() external {
     (bool result,) = address(delegate).delegatecall(msg.data);
     if (result) {
       this;
