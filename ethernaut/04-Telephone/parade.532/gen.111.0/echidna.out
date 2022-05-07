@@ -1,0 +1,12 @@
+Loaded total of 1 transactions from corpus/coverage
+Analyzing contract: /code/ethernaut/04-Telephone/Test.sol:Test
+echidna_test_origin: failed!💥  
+  Call sequence:
+    callPwn()
+
+
+
+Unique instructions: 275
+Unique codehashes: 2
+Corpus size: 1
+Seed: 4932969313439531350

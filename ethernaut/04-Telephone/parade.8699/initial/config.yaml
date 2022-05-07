@@ -1,0 +1,15 @@
+contractAddr: '0x4242'
+corpusDir: /code/ethernaut/04-Telephone/parade.8699/corpus
+coverage: true
+dictFreq: 0.4
+filterBlacklist: true
+filterFunctions: []
+mutConsts:
+- 1
+- 1
+- 1
+- 1
+seqLen: 100
+stopOnFail: false
+testLimit: 1000000000
+timeout: 300

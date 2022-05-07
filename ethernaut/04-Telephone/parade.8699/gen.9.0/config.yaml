@@ -1,0 +1,16 @@
+contractAddr: '0x4242'
+corpusDir: corpus
+coverage: true
+dictFreq: 0.23
+filterBlacklist: true
+filterFunctions:
+- Test.changeOwner(address)
+mutConsts:
+- 2
+- 2000
+- 2
+- 2
+seqLen: 138
+stopOnFail: false
+testLimit: 1000000000
+timeout: 30

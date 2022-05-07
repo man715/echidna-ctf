@@ -1,0 +1,15 @@
+contractAddr: '0x4242'
+corpusDir: corpus
+coverage: true
+dictFreq: 0.91
+filterBlacklist: true
+filterFunctions: []
+mutConsts:
+- 1000
+- 1000
+- 0
+- 3
+seqLen: 100
+stopOnFail: false
+testLimit: 1000000000
+timeout: 300

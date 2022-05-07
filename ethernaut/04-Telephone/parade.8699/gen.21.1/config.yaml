@@ -1,0 +1,16 @@
+contractAddr: '0x4242'
+corpusDir: corpus
+coverage: true
+dictFreq: 0.68
+filterBlacklist: true
+filterFunctions:
+- Test.callPwn()
+mutConsts:
+- 1000
+- 0
+- 0
+- 2000
+seqLen: 283
+stopOnFail: false
+testLimit: 1000000000
+timeout: 30
