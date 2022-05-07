@@ -1,0 +1,11 @@
+Analyzing contract: /code/ethernaut/05-Token/Test.sol:Test
+echidna_balance_higher_than_20: failed!💥  
+  Call sequence:
+    transfer(0x0,21)
+
+
+
+Unique instructions: 285
+Unique codehashes: 1
+Corpus size: 1
+Seed: -3333445997668898128
