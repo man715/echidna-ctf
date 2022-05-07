@@ -13,6 +13,10 @@ contract Test is Delegation {
   }
 
   function echidna_test_owner() public returns (bool) {
-    return owner != msg.sender;
+    if (owner == address(0x90000)) {
+        return false;
+    } else {
+        return true;
+    }
   }
 }

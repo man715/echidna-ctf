@@ -40,7 +40,7 @@
     | pragma solidity ^0.6.0;
     | 
     | import 'Delegation.sol';
-*r  | 
+*   | 
     | contract Test is Delegation {
     |   constructor() Delegation(address(new Delegate(msg.sender))) public { }
     | 
@@ -50,6 +50,6 @@
     |   }
     | 
     |   function echidna_test_owner() public returns (bool) {
-    |     return owner == address(0x30000);
+    |     return owner == address(0x30000) || owner == address(0x10000) ;
     |   }
     | }
