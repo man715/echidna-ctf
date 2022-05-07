@@ -1,0 +1,7 @@
+Analyzing contract: /code/ethernaut/03-Coin_Flip/Test.sol:Test
+echidna_test_flip:  passed! 🎉
+
+Unique instructions: 363
+Unique codehashes: 1
+Corpus size: 6
+Seed: 7528281725658792795
