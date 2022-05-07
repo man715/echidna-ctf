@@ -1,0 +1,11 @@
+Analyzing contract: /code/ethernaut/04-Telephone/Test2.sol:Test
+echidna_test_origin: failed!💥  
+  Call sequence:
+    pwn()
+
+
+
+Unique instructions: 210
+Unique codehashes: 2
+Corpus size: 1
+Seed: 7641931435682879643
