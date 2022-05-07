@@ -1,6 +1,4 @@
-// SPDX-License-Identifier: MIT
-
-pragma solidity ^0.6.0;
+pragma solidity ^0.5.0;
 
 contract Delegate {
 
@@ -25,8 +23,8 @@ contract Delegation {
     owner = msg.sender;
   }
 
-  fallback() external {
-    (bool result,) = address(delegate).delegatecall(msg.data);
+  function() external {
+    (bool result, bytes memory data) = address(delegate).delegatecall(msg.data);
     if (result) {
       this;
     }

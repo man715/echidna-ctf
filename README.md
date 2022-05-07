@@ -11,10 +11,10 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | --- | ---------------- |:-------------------:|:---------------:| ----------- |
 | 01  | Fallback         |         Yes         |    :muscle:     |             |
 | 02  | Fallout          |         Yes         |    :muscle:     |             |
-| 03  | Coin Flip        |         No         | :no_entry_sign: |             |
+| 03  | Coin Flip        |         No          | :no_entry_sign: |             |
 | 04  | Telephone        |         Yes         |    :muscle:     |             |
 | 05  | Token            |         Yes         |    :muscle:     |             |
-| 06  | Delegation       |                     |                 |             |
+| 06  | Delegation       |         No          | :no_entry_sign: |             |
 | 07  | Force            |                     |                 |             |
 | 08  | Vault            |                     |                 |             |
 | 09  | King             |                     |                 |             |
