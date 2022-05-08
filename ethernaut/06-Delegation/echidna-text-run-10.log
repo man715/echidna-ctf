@@ -1,0 +1,11 @@
+Analyzing contract: /code/ethernaut/06-Delegation/Test.sol:Test
+echidna_test_owner: failed!💥  
+  Call sequence:
+    pwn2own()
+
+
+
+Unique instructions: 272
+Unique codehashes: 1
+Corpus size: 1
+Seed: 4787769918554506114
