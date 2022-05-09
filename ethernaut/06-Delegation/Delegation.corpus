@@ -1,0 +1,70 @@
+{
+    "payable": {},
+    "timestamp": {},
+    "block_number": {},
+    "msg_sender": {
+        "Delegate": [
+            "pwn()"
+        ],
+        "Delegation": [
+            "constructor(address)"
+        ]
+    },
+    "msg_gas": {},
+    "assert": {},
+    "constant_functions": {
+        "Delegate": [
+            "owner()"
+        ],
+        "Delegation": [
+            "owner()"
+        ]
+    },
+    "constants_used": {},
+    "constants_used_in_binary": {},
+    "functions_relations": {
+        "Delegate": {
+            "constructor(address)": {
+                "impacts": [],
+                "is_impacted_by": []
+            },
+            "pwn()": {
+                "impacts": [],
+                "is_impacted_by": []
+            }
+        },
+        "Delegation": {
+            "constructor(address)": {
+                "impacts": [
+                    "()"
+                ],
+                "is_impacted_by": []
+            },
+            "()": {
+                "impacts": [],
+                "is_impacted_by": [
+                    "constructor(address)"
+                ]
+            }
+        }
+    },
+    "constructors": {
+        "Delegate": "constructor(address)",
+        "Delegation": "constructor(address)"
+    },
+    "have_external_calls": {
+        "Delegation": [
+            "()"
+        ]
+    },
+    "call_a_parameter": {},
+    "use_balance": {},
+    "solc_versions": [
+        "0.6.0"
+    ],
+    "with_fallback": [
+        "Delegation"
+    ],
+    "with_receive": []
+}
+Delegation.sol analyzed (2 contracts)
