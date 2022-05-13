@@ -7,34 +7,34 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 
 # Ethernaut
 
-| \#  | Name             | Solved with Echidna |     Echidna     | Filed Issue |
-| --- | ---------------- |:-------------------:|:---------------:| ----------- |
-| 01  | Fallback         |         Yes         |    :muscle:     |             |
-| 02  | Fallout          |         Yes         |    :muscle:     |             |
-| 03  | Coin Flip        |         No          | :no_entry_sign: |             |
-| 04  | Telephone        |         Yes         |    :muscle:     |             |
-| 05  | Token            |         Yes         |    :muscle:     |             |
-| 06  | Delegation       |         No          | :no_entry_sign: |             |
-| 07  | Force            |                     |                 |             |
-| 08  | Vault            |                     |                 |             |
-| 09  | King             |                     |                 |             |
-| 10  | Re-entrancy      |                     |                 |             |
-| 11  | Elevator         |                     |                 |             |
-| 12  | Privacy          |                     |                 |             |
-| 13  | Gatekeeper One   |                     |                 |             |
-| 14  | Gatekeeper Two   |                     |                 |             |
-| 15  | Naught Coin      |                     |                 |             |
-| 16  | Preservation     |                     |                 |             |
-| 17  | Recovery         |                     |                 |             |
-| 18  | MagicNumber      |                     |                 |             |
-| 19  | Alien Codex      |                     |                 |             |
-| 20  | Denial           |                     |                 |             |
-| 21  | Shop             |                     |                 |             |
-| 22  | Dex              |                     |                 |             |
-| 23  | Dex Two          |                     |                 |             |
-| 24  | Puzzle Wallet    |                     |                 |             |
-| 25  | Motorbike        |                     |                 |             |
-| 26  | DoubleEntryPoint |                     |                 |             |
+| \#  | Name             | Solved with Echidna |     Echidna     | Filed Issue                                  |
+| --- | ---------------- |:-------------------:|:---------------:| -------------------------------------------- |
+| 01  | Fallback         |         Yes         |    :muscle:     |                                              |
+| 02  | Fallout          |         Yes         |    :muscle:     |                                              |
+| 03  | Coin Flip        |         No          | :no_entry_sign: |                                              |
+| 04  | Telephone        |         Yes         |    :muscle:     |                                              |
+| 05  | Token            |         Yes         |    :muscle:     |                                              |
+| 06  | Delegation       |         Yes         |      :mag:      | https://github.com/crytic/echidna/issues/764 |
+| 07  | Force            |                     |                 |                                              |
+| 08  | Vault            |                     |                 |                                              |
+| 09  | King             |                     |                 |                                              |
+| 10  | Re-entrancy      |                     |                 |                                              |
+| 11  | Elevator         |                     |                 |                                              |
+| 12  | Privacy          |                     |                 |                                              |
+| 13  | Gatekeeper One   |                     |                 |                                              |
+| 14  | Gatekeeper Two   |                     |                 |                                              |
+| 15  | Naught Coin      |                     |                 |                                              |
+| 16  | Preservation     |                     |                 |                                              |
+| 17  | Recovery         |                     |                 |                                              |
+| 18  | MagicNumber      |                     |                 |                                              |
+| 19  | Alien Codex      |                     |                 |                                              |
+| 20  | Denial           |                     |                 |                                              |
+| 21  | Shop             |                     |                 |                                              |
+| 22  | Dex              |                     |                 |                                              |
+| 23  | Dex Two          |                     |                 |                                              |
+| 24  | Puzzle Wallet    |                     |                 |                                              |
+| 25  | Motorbike        |                     |                 |                                              |
+| 26  | DoubleEntryPoint |                     |                 |                                              |
 
 Echidna reference:
  * :muscle:: Echidna breaks the invariant by itself or mostly by itself. The echidna-specific code needed contains an echidna property to represent the CTF "win" condition, and Echidna finds the (series of) calls that break the contract via fuzzing. Example: Fallout test contract; it extends the CTF contract and only adds a single echidna property.
