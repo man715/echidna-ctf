@@ -39,12 +39,12 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 Echidna reference:
  * :muscle:: Echidna breaks the invariant by itself or mostly by itself. The echidna-specific code needed contains an echidna property to represent the CTF "win" condition, and Echidna finds the (series of) calls that break the contract via fuzzing. Example: Fallout test contract; it extends the CTF contract and only adds a single echidna property.
  * :mag:: Echidna merely verifies that some given code breaks the provided invariant. The code needed contains an echidna property as well as extra functions and any auxiliary contracts required to execute the attack to solve the exercise. Example: Gatekeeper Two test contract; it has helper contracts and an extra function to trigger the attack, as well as an echidna property that represents the CTF "win" condition. When echidna triggers the attack and then runs the property, it will confirm that the attack was successful.
- * :no_entry_sign:: Echidna could not conclusivly suggest an issue or provide a solution to the challenge
+ * :no_entry_sign:: Echidna could not conclusively suggest an issue or provide a solution to the challenge
 
 
 
 # Setup 
-I will be using Trail of Bits' Docier image eth-security-toolbox.
+I will be using Trail of Bits' Docker image eth-security-toolbox.
 
 ```bash
 docker run -it --rm -v $PWD:/code trailofbits/eth-security-toolbox
@@ -62,7 +62,7 @@ rm -rf node_modules
 # Echidna Command
 The command I run to get the output here is as follows:
 ```bash
-echidna-test Test.sol --config config.yaml --contract Test --format text | tee echidna-text-run.log && rm -rf crytic-export/
+echidna-test Test.sol --config config.yaml --contract Test --format text | tee echidna-text-run.log && rm -rf crytic-export
 ```
 
 I'm not sure if there is a better way to clean up the crytic-export folder or not. 
