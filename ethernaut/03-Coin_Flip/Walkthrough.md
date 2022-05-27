@@ -1,7 +1,9 @@
 # Coin Flip Walkthrough
 The objective of this is to guess the flip correctly 10 times in a predictable manner. I'm not sure that this fuzzer is really able to help us guess the flip in a predictable manner as it is fesible that the fuzzer can guess the input correctly 10 times in a row. 
 
-To successfully and predictably break the contract, we should be able to not only guess 10 consecutive times but even 100 or more times. When I run the test for greater than 10 times, the fuzzer is able to make the contract fail using miltiple senders. However, test it for 100 times or with using `psender` or `sender` the invariant does not fail. 
+To successfully and predictably break the contract, we should be able to not only guess 10 consecutive times but even 100 or more times. When I run the test for greater than 10 times, the fuzzer is able to make the contract fail using multiple senders. However, test it for 100 times or with using `psender` or `sender` the invariant does not fail. 
+
+The fuzzer does potentially lead you down the right path for solving this issue as it does cause the invariant to fail on 10 consecutive tries with time/block delays. However, in my testing it does not help discern what delay will give consistent predictable results. 
 
 # Setup
 This does not require any setup.
