@@ -15,3 +15,8 @@ function echidna_is_owner() public view returns(bool) {
             return true;
         }
 ```
+
+## Run the test
+```shell
+echidna-test Test.sol --contract Test
+```

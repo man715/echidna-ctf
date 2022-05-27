@@ -49,7 +49,6 @@ contract Test is Telephone {
 ```
 
 ## Setup 2
-## Setup 1
 Create the config.yaml:
 ```yaml
 contractAddr: "0x4242"
