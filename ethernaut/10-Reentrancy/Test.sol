@@ -18,14 +18,14 @@ contract Test {
     r.withdraw(1 ether);
   }
 
-  fallback() external payable {
-    uint steal = address(msg.sender).balance;
-    steal = steal > 1 ether ? 1 ether : steal;
-    if (steal != 0)
-      address(msg.sender).call.gas(100 ether)(abi.encodeWithSignature("withdraw(uint256)", steal));
-  }
+  // fallback() external payable {
+  //   uint steal = address(msg.sender).balance;
+  //   steal = steal > 1 ether ? 1 ether : steal;
+  //   if (steal != 0)
+  //     address(msg.sender).call.gas(100 ether)(abi.encodeWithSignature("withdraw(uint256)", steal));
+  // }
 
   function echidna_test_balance() public returns (bool) {
-    return address(r).balance > 0;
+    return address(r).balance >= 00000000000000000000;
   }
 }
