@@ -1,8 +1,8 @@
-# Fallout Walkthrough
-Our goal for this challenge is to become the owner of the contract.
+# Force Walkthrough
+The objective is to force the target contract to receive ether. 
 
 ## Setup
-This contract does not require any setup.
+
 
 ## Test Setup
 This requires a very simple test of check if the owner is the msg.sender. If it is, the test should return false since that is not the ideal result.
@@ -18,5 +18,5 @@ function echidna_is_owner() public view returns(bool) {
 
 ## Run the test
 ```shell
-[Walkthrough](ethernaut/07-Force/Walkthrough.md)echidna-test Test.sol --contract Test
+echidna-test Test.sol --contract Test
 ```

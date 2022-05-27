@@ -12,7 +12,7 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | 01  | Fallback         |         Yes         |    :muscle:     |                                              |
 | 02  | Fallout          |         Yes         |    :muscle:     |                                              |
 | 03  | Coin Flip        |         No          | :no_entry_sign: |                                              |
-| 04  | Telephone        |         Yes         |    :muscle:     |                                              |
+| 04  | Telephone        |         Yes         |      :mag:      |                                              |
 | 05  | Token            |         Yes         |    :muscle:     |                                              |
 | 06  | Delegation       |         Yes         |      :mag:      | https://github.com/crytic/echidna/issues/764 |
 | 07  | Force            |                     |                 |                                              |
