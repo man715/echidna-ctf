@@ -1,1 +1,3 @@
 contractAddr: "0x4242"
+sender: ["0x10000"]
+deployer: "0x30000"

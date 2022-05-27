@@ -28,3 +28,9 @@ contract Test is Token {
     }
 }
 ```
+
+## Run Test
+```shell
+echidna-test --config config.yaml Test.sol --contract Test
+```
+

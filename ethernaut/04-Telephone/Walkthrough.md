@@ -7,9 +7,11 @@ The objective is to take ownership of the target.
 Create the config.yaml:
 ```yaml
 contractAddr: "0x4242"
+sender: ["0x10000"]
+deployer: "0x30000"
 ```
 
-This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller.
+This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller. The default deployer address is already `0x30000` but I wanted to make that explicit. I also wanted to make sure the sender address was one specific address. 
 
 ## Test Setup 1
 
@@ -48,14 +50,21 @@ contract Test is Telephone {
 }
 ```
 
+## Run Test
+```shell
+echidna-test --config config2.yaml Test2.sol --contract Test
+```
+
 ## Setup 2
 Create the config.yaml:
 ```yaml
 contractAddr: "0x4242"
+sender: ["0x10000"]
+deployer: "0x30000"
 multi-abi: true
 ```
 
-This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller.
+This is not strictly necessary as the contract will be deployed to the default address of `0x00a329c0648769a73afac7f9381e08fb43dbea72`. But to make things easier, I just decided to set the contract address to something smaller. The default deployer address is already `0x30000` but I wanted to make that explicit. I also wanted to make sure the sender address was one specific address. 
 
 The second line `multi-abi: true` is needed to allow the echidna to call into any contract with a known ABI.
 
@@ -91,4 +100,9 @@ contract Test is Telephone {
         }
     }    
 }
+```
+
+## Run Test
+```shell
+echidna-test --config config2.yaml Test2.sol --contract Test
 ```

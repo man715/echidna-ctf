@@ -5,6 +5,8 @@ import './Telephone.sol';
 contract RingRing {
   Test phone = Test(0x4242);
   
+  // At some point echidna will call this function directly on this contract
+  // this is only possible since we used the multi-abi: true line in the config
   function pwn() public {
     phone.changeOwner(address(0x10000));
   }
@@ -13,7 +15,7 @@ contract RingRing {
 contract Test is Telephone {
     RingRing ring;
   constructor() Telephone() public payable {
-    // hint echidna
+    // Instantiate a new RingRing contract that will change the owner of target contract.
     ring = new RingRing();
   }
 
