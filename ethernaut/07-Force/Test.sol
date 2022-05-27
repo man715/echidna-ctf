@@ -18,4 +18,8 @@ contract Test {
   function echidna_test_balance() public returns (bool) {
     return address(target).balance == 0;
   }
+
+  function echidna_test_balance2() public returns (bool) {
+    return address(this) == address(0x90000);
+  }
 }

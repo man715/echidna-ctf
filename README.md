@@ -15,7 +15,7 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | 04  | Telephone        |         Yes         |      :mag:      |                                              |
 | 05  | Token            |         Yes         |    :muscle:     |                                              |
 | 06  | Delegation       |         Yes         |      :mag:      | https://github.com/crytic/echidna/issues/764 |
-| 07  | Force            |                     |                 |                                              |
+| 07  | Force            |         N/A         |                 |                                              |
 | 08  | Vault            |                     |                 |                                              |
 | 09  | King             |                     |                 |                                              |
 | 10  | Re-entrancy      |                     |                 |                                              |
