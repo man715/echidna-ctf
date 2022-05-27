@@ -5,9 +5,9 @@ contract Vault {
   bool public locked;
   bytes32 private password;
 
-  constructor(bytes32 _password) public {
+  constructor() public {
     locked = true;
-    password = _password;
+    password = 'H25Uir3narCNqT5Z@^V#@3BDJhv&is2';
   }
 
   function unlock(bytes32 _password) public {
