@@ -19,10 +19,10 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | 08  | Vault            |         N/A         | :no_entry_sign: |                                              |
 | 09  | King             |         N/A         | :no_entry_sign: |                                              |
 | 10  | Re-entrancy      |         Yes         |      :mag:      |                                              |
-| 11  | Elevator         |         N/A          | :no_entry_sign: |                                              |
-| 12  | Privacy          |         N/A          | :no_entry_sign: |                                              |
+| 11  | Elevator         |         N/A         | :no_entry_sign: |                                              |
+| 12  | Privacy          |         N/A         | :no_entry_sign: |                                              |
 | 13  | Gatekeeper One   |         No          | :no_entry_sign: |                                              |
-| 14  | Gatekeeper Two   |                     |                 |                                              |
+| 14  | Gatekeeper Two   |         No          | :no_entry_sign: |                                              |
 | 15  | Naught Coin      |                     |                 |                                              |
 | 16  | Preservation     |                     |                 |                                              |
 | 17  | Recovery         |                     |                 |                                              |
