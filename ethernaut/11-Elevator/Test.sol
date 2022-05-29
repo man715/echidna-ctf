@@ -5,9 +5,13 @@ import 'Elevator.sol';
 
 contract Attacker {
     int check = 0;
+    Elevator target = Elevator(0x90000);
 
-    function start() {
-        Elevator target = address(0x90000);
+    constructor() public {
+        target.goTo(2);
+    }
+
+    function start() public {
         target.goTo(2);
     }
 
@@ -24,6 +28,6 @@ contract Attacker {
 
 contract Test is Elevator{
     function echidna_is_top_floor() public returns (bool) {
-        return ! top;
+        return top;
     }
 }

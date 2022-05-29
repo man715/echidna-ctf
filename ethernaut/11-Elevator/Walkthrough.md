@@ -11,7 +11,7 @@ multi-abi: true
 ```
 
 ## Test Setup
-Solving 
+Solving this using Echidna requires more setup and you already have to have the knowledge and attacker contract setup to solve it. 
 
 ## Run the test
 ```shell
