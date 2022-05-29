@@ -1,12 +1,13 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
-import 'GatekeeperOne.sol';
+import 'GatekeeperTwo.sol';
 
 contract Test {
-    GatekeeperOne target;
+    GatekeeperTwo target;
     constructor() public {
         target = new GatekeeperOne();
+        New Attacker();
     }
 
     function start(bytes8 _gateKey) public {
