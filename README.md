@@ -18,8 +18,8 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 | 07  | Force            |         N/A         | :no_entry_sign: |                                              |
 | 08  | Vault            |         N/A         | :no_entry_sign: |                                              |
 | 09  | King             |         N/A         | :no_entry_sign: |                                              |
-| 10  | Re-entrancy      |                     |      :mag:      |                                              |
-| 11  | Elevator         |                     |                 |                                              |
+| 10  | Re-entrancy      |         Yes         |      :mag:      |                                              |
+| 11  | Elevator         |         Yes         | :no_entry_sign: |                                              |
 | 12  | Privacy          |                     |                 |                                              |
 | 13  | Gatekeeper One   |                     |                 |                                              |
 | 14  | Gatekeeper Two   |                     |                 |                                              |

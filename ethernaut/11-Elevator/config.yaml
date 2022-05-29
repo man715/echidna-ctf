@@ -1,0 +1,3 @@
+sender: ["0x10000"]
+contractAddr: "0x90000"
+multi-abi: true
