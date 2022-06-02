@@ -7,34 +7,34 @@ Each attempt will have the CTF contract(s), the test contract(s), and a writeup 
 
 # Ethernaut
 
-| \#  | Name             | Solved with Echidna |     Echidna     | Filed Issue                                  |
-| --- | ---------------- |:-------------------:|:---------------:| -------------------------------------------- |
-| 01  | Fallback         |         Yes         |    :muscle:     |                                              |
-| 02  | Fallout          |         Yes         |    :muscle:     |                                              |
-| 03  | Coin Flip        |         No          | :no_entry_sign: |                                              |
-| 04  | Telephone        |         Yes         |      :mag:      |                                              |
-| 05  | Token            |         Yes         |    :muscle:     |                                              |
-| 06  | Delegation       |         Yes         |      :mag:      | https://github.com/crytic/echidna/issues/764 |
-| 07  | Force            |         N/A         | :no_entry_sign: |                                              |
-| 08  | Vault            |         N/A         | :no_entry_sign: |                                              |
-| 09  | King             |         N/A         | :no_entry_sign: |                                              |
-| 10  | Re-entrancy      |         Yes         |      :mag:      |                                              |
-| 11  | Elevator         |         N/A         | :no_entry_sign: |                                              |
-| 12  | Privacy          |         N/A         | :no_entry_sign: |                                              |
-| 13  | Gatekeeper One   |         No          | :no_entry_sign: |                                              |
-| 14  | Gatekeeper Two   |         No          | :no_entry_sign: |                                              |
-| 15  | Naught Coin      |                     |                 |                                              |
-| 16  | Preservation     |                     |                 |                                              |
-| 17  | Recovery         |                     |                 |                                              |
-| 18  | MagicNumber      |                     |                 |                                              |
-| 19  | Alien Codex      |                     |                 |                                              |
-| 20  | Denial           |                     |                 |                                              |
-| 21  | Shop             |                     |                 |                                              |
-| 22  | Dex              |                     |                 |                                              |
-| 23  | Dex Two          |                     |                 |                                              |
-| 24  | Puzzle Wallet    |                     |                 |                                              |
-| 25  | Motorbike        |                     |                 |                                              |
-| 26  | DoubleEntryPoint |                     |                 |                                              |
+| \#  | Name             | Solved with Echidna |     Echidna     | Filed Issue                                  | Notes                                                                                                               |
+| --- | ---------------- |:-------------------:|:---------------:| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 01  | Fallback         |         Yes         |    :muscle:     |                                              |                                                                                                                     |
+| 02  | Fallout          |         Yes         |    :muscle:     |                                              |                                                                                                                     |
+| 03  | Coin Flip        |         No          | :no_entry_sign: |                                              | The fuzzer does potentially lead you down the right path for solving this issue as it does cause the invariant to fail on 10 consecutive tries with time/block delays. However, in my testing it does not help discern what delay will give consistent predictable results.                                                                                                                     |
+| 04  | Telephone        |         Yes         |      :mag:      |                                              |                                                                                                                     |
+| 05  | Token            |         Yes         |    :muscle:     |                                              |                                                                                                                     |
+| 06  | Delegation       |         Yes         |      :mag:      | https://github.com/crytic/echidna/issues/764 |                                                                                                                     |
+| 07  | Force            |         N/A         | :no_entry_sign: |                                              |                                                                                                                     |
+| 08  | Vault            |         N/A         | :no_entry_sign: |                                              |                                                                                                                     |
+| 09  | King             |         N/A         | :no_entry_sign: |                                              |                                                                                                                     |
+| 10  | Re-entrancy      |         Yes         |      :mag:      |                                              |                                                                                                                     |
+| 11  | Elevator         |         N/A         | :no_entry_sign: |                                              |                                                                                                                     |
+| 12  | Privacy          |         N/A         | :no_entry_sign: |                                              |                                                                                                                     |
+| 13  | Gatekeeper One   |         No          | :no_entry_sign: |                                              | For Echidna to break this contract, it would need to randomize the amount of gas being sent.                        |
+| 14  | Gatekeeper Two   |         No          | :no_entry_sign: |                                              | For Echidna to be able to solve this challenge, it would have to be able to randomize the inputs for a constructor. |
+| 15  | Naught Coin      |                     |                 |                                              |                                                                                                                     |
+| 16  | Preservation     |                     |                 |                                              |                                                                                                                     |
+| 17  | Recovery         |                     |                 |                                              |                                                                                                                     |
+| 18  | MagicNumber      |                     |                 |                                              |                                                                                                                     |
+| 19  | Alien Codex      |                     |                 |                                              |                                                                                                                     |
+| 20  | Denial           |                     |                 |                                              |                                                                                                                     |
+| 21  | Shop             |                     |                 |                                              |                                                                                                                     |
+| 22  | Dex              |                     |                 |                                              |                                                                                                                     |
+| 23  | Dex Two          |                     |                 |                                              |                                                                                                                     |
+| 24  | Puzzle Wallet    |                     |                 |                                              |                                                                                                                     |
+| 25  | Motorbike        |                     |                 |                                              |                                                                                                                     |
+| 26  | DoubleEntryPoint |                     |                 |                                              |                                                                                                                     |
 
 Echidna reference:
  * :muscle:: Echidna breaks the invariant by itself or mostly by itself. The echidna-specific code needed contains an echidna property to represent the CTF "win" condition, and Echidna finds the (series of) calls that break the contract via fuzzing. Example: Fallout test contract; it extends the CTF contract and only adds a single echidna property.
