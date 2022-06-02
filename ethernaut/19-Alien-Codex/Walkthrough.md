@@ -1,0 +1,2 @@
+# Alien Codex Walkthrough
+Not applicable to a fuzzer. The only way that this could be solved is if you could specify a value that would be fuzzed (the sender's address) and it randomly puts it in various parts of an array. 
