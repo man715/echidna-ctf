@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.5.0;
 
-import '/code/@openzeppelin/helpers/Ownable-05.sol';
+import '/code/@openzeppelin/contracts/access/Ownable-05.sol';
 
 contract AlienCodex is Ownable {
+
 
   bool public contact;
   bytes32[] public codex;
