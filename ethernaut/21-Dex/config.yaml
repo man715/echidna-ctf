@@ -1,1 +1,3 @@
 sender: ["0x10000"]
+filterBlacklist: false
+filterFunctions: ["Test.swap1to2()", "Test.swap2to1()"]

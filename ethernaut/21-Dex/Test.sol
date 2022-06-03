@@ -13,16 +13,26 @@ contract Test is Dex {
         token2 = address(_token2);
     }
 
+    function swap1to2() public {
+        uint256 _amount = SwappableToken(token1).balanceOf(address(0x10000));
+        swap(token2, token1, _amount);
+    }
+
+    function swap2to1() public {
+        uint256 _amount = SwappableToken(token2).balanceOf(address(0x10000));
+        swap(token2, token1, _amount);
+    }
+
     function echidna_test_dex_balance_token1() public returns (bool) {
-        return (SwappableToken(token1).balanceOf(address(this)) > 1);
+        return (SwappableToken(token1).balanceOf(address(this)) > 0);
     }
 
     function echidna_test_dex_balance_token2() public returns (bool) {
-        return (SwappableToken(token2).balanceOf(address(this)) > 1);
+        return (SwappableToken(token2).balanceOf(address(this)) > 0);
     }
 
     function echidna_test_attacker_balance_token1() public returns (bool) {
-        return (SwappableToken(token1).balanceOf(address(0x10000)) > 1);
+        return (SwappableToken(token1).balanceOf(address(0x10000)) > 0);
     }
 
 }
