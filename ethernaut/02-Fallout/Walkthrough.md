@@ -18,5 +18,5 @@ function echidna_is_owner() public view returns(bool) {
 
 ## Run the test
 ```shell
-[Walkthrough](ethernaut/07-Force/Walkthrough.md)echidna-test Test.sol --contract Test
+echidna-test Test.sol --contract Test
 ```
